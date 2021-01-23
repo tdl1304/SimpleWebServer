@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	background: url('background.png') no-repeat center center fixed;
+	background-size: cover;
+	min-width:1080px;
+	overflow: auto;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.footer-text{
+	font-family: Verdana, serif;
+	color: grey;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	padding: 1em;
+}
+
+.grid-container{
+	display: grid;
+	margin-top: 10%;
+	grid-template-columns: 90%;
+	justify-content: center;
+	align-content: center;
+}
+
+.img-container{
+	padding: 2em 0;
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+div.grid-container h1 {
+	font-family: Montserrat, serif;
+	color: white;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	padding: 1em 0;
+}
+div.grid-container p {
+	font-family: Verdana, serif;
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 1em 0;
+}
+
+.nav {
+	background: #333333;
+	height: 80px;
+	width: 100%;
+	font-family: Montserrat, Verdana, serif;
+}
+
+.logo{
+	display: inline;
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+#logo-IMG{
+	display: inline-block;
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin: 10px 2px 2px 100px;
+}
+
+div.nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+div.nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+div.nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.active, a:hover{
+	background: #777;
+	transition: .5s;
+}
+/*scrollbar customization*/
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+	margin: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: lightgrey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #111111; 
+}
