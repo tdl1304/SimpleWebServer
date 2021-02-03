@@ -11,7 +11,7 @@ const server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write('<h1>Welcome</h1>');
     var headers = req.rawHeaders;
-    var headersHtml = htmlHeadersListAsString(headers)
+    var headersHtml = htmlHeadersListAsString(headers);
     res.write(headersHtml);
     res.end();
 });
