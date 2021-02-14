@@ -8,7 +8,7 @@ const PORT = 8080;
  * webserver wrapper
  */
 const server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.writeHead(200, {'Content-Type': 'text/html', 'EasterEgg':'You found it!'});
     res.write('<h1>Welcome</h1>');
     var headers = req.rawHeaders;
     var headersHtml = htmlHeadersListAsString(headers);
