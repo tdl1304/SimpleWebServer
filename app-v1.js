@@ -6,6 +6,7 @@ const PORT = 8080;
 
 /**
  * webserver wrapper
+ * server stops connection on timeout automatically
  */
 const server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html', 'EasterEgg':'You found it!'});
@@ -13,7 +14,7 @@ const server = http.createServer(function(req, res) {
     var headers = req.rawHeaders;
     var headersHtml = htmlHeadersListAsString(headers);
     res.write(headersHtml);
-    res.end();
+    res.end(); //end response
 });
 
 /**
